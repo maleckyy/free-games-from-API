@@ -1,0 +1,100 @@
+.game-info-wrapper {
+  padding: 20px 60px;
+  color: var(--color-white);
+}
+.game-info-wrapper .game {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.game-info-wrapper .game .game-image {
+  width: 620px;
+  border-radius: 21px;
+}
+.game-info-wrapper .game .game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 18px;
+}
+.game-info-wrapper .game .game-info__title {
+  font-size: 48px;
+}
+.game-info-wrapper .game .game-info .desc__title {
+  font-size: 32px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+.game-info-wrapper .game .game-info .desc__text {
+  font-size: 22px;
+  width: 800px;
+  font-weight: 300;
+}
+.game-info-wrapper .game .game-info__details {
+  color: var(--color-grey);
+  font-weight: 300;
+}
+.game-info-wrapper .game .game-info .download {
+  align-self: center;
+  background-color: var(--color-accent);
+  padding: 12px 130px;
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--color-white);
+  border-radius: 10px;
+}
+.game-info-wrapper .game .game-info .download .platform {
+  font-size: 18px;
+  font-weight: 300;
+}
+.game-info-wrapper .similar-games-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games__title {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 5px;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-bg);
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list::-webkit-scrollbar {
+  height: 8px;
+  background-color: #F5F5F5;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 5px;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list .similar-game {
+  background-color: var(--color-grey-opacity);
+  padding: 15px;
+  border-radius: 20px;
+  transition: all 0.14s;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list .similar-game__img {
+  border-radius: 15px;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list .similar-game__title {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.game-info-wrapper .similar-games-wrapper .similar-games-list .similar-game:hover {
+  transform: scale(1.01);
+  opacity: 0.7;
+  cursor: pointer;
+}/*# sourceMappingURL=game-info.component.css.map */

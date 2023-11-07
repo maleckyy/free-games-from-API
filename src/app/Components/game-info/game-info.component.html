@@ -1,0 +1,62 @@
+<!-- <div class="s">{{selectedGame[0].title}}</div> -->
+
+<div class="game-info-wrapper">
+
+
+    <div class="game">
+        <img class="game-image" src={{selectedGame.thumbnail}} alt={{selectedGame.thumbnail}}/>
+
+        
+        <div class="game-info">
+            <div class="game-info__title">{{selectedGame.title}}</div>
+        
+            <div class="desc">
+                <div class="desc__title">Opis gry.</div>
+            
+                <div class="desc__text">{{selectedGame.short_description}}</div>
+            
+            </div>
+
+            <div class="game-info__details">
+
+                <div class="game-info__details__date">Data wydania: {{selectedGame.release_date | date}}</div>
+                <div class="game-info__details__publisher">Wydawca: {{selectedGame.publisher}}</div>
+                <div class="game-info__details__developer">Devloper: {{selectedGame.developer}}</div>
+                <div class="game-info__details__genre">Gatunek: {{selectedGame.genre}}</div>
+            </div>
+            
+            <a href={{selectedGame.game_url}} class="download" target="_blank">Pobierz 
+                <span class="platform">({{selectedGame.platform}})</span>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+
+    
+
+    <div *ngIf="similarGames.length > 0" class="similar-games-wrapper">
+        <div  class="similar-games__title">Podobne gry z gatunku: {{selectedGame.genre}}</div>
+
+        <div class="similar-games-list">
+
+            <div class="similar-game" *ngFor="let game of similarGames.slice(0,5)" routerLinkActive="active" routerLink="../{{game.id}}">
+                <img src={{game.thumbnail}} alt={{game.title}} class="similar-game__img">
+                <div class="similar-game__title">{{game.title}}</div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div>
+

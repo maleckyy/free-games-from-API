@@ -1,0 +1,79 @@
+.games-container {
+  display: flex;
+  padding: 0px 100px;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+}
+.games-container .upButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 40px;
+  color: #FFF;
+  rotate: -90deg;
+  z-index: -1;
+}
+@media only screen and (max-width: 410px) {
+  .games-container {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.games-container .filters-container {
+  background-color: var(--color-grey-opacity);
+  color: var(--color-white);
+  width: 15%;
+  border-radius: 21px;
+  padding: 21px;
+  height: 600px;
+  min-width: 230px;
+}
+.games-container .filters-container .filters-title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.games-container .filters-container .filters-buttons-wrapper .filter-button {
+  padding: 5px;
+  padding-left: 30px;
+  border-radius: 18px;
+  background-color: var(--color-bg);
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.games-container .filters-container .filters-buttons-wrapper .filter-button:hover {
+  transform: scale(1.02);
+  background-color: var(--color-grey-opacity);
+}
+.games-container .filters-container .filters-buttons-wrapper .active {
+  background-color: var(--color-accent);
+}
+@media only screen and (max-width: 410px) {
+  .games-container .filters-container {
+    width: 95%;
+    height: auto;
+  }
+}
+.games-container .games-container_list-wrapper {
+  width: 75%;
+}
+.games-container .games-container_list-wrapper .games-container__title {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.games-container .games-container_list-wrapper .games-container__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .games-container .games-container_list-wrapper .games-container__list {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=games-list.component.css.map */

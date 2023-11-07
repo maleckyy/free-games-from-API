@@ -1,0 +1,30 @@
+<div class="games-container">
+
+    <div class="filters-container">
+
+        <div class="filters-title">Kategorie:</div>
+
+        <div class="filters-buttons-wrapper">
+            <div class="filter-button" routerLink="" [queryParams]="{genre:''}" [ngClass]=" !genreType ? 'active': '' " >• WSZYSTKIE</div>
+            <div class="filter-button" *ngFor="let genre of allGenres" routerLink="" [queryParams]="{genre:genre}" [ngClass]=" genreType === (genre | lowercase) ? 'active': '' " >• {{genre | uppercase}}</div>
+        </div>
+
+    </div>
+    
+    
+    
+    <div class="games-container_list-wrapper">
+
+        <div class="games-container__title">
+            {{genreType ? 'Gry w kategorii'+' '+ (genreType | uppercase) : 'Wszystkie gry' }}
+        </div>
+        
+        <div class="games-container__list">
+        
+            <app-game-box *ngFor="let game of allGamesData" [game]="game"></app-game-box>
+        
+        </div>
+    </div>
+    <div class="upButton">➭</div>
+
+</div>

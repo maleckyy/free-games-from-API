@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --color-main:rgb(84, 84, 84);
+  --color-font:rgb(206, 205, 205);
+  --color-font-secondary:rgb(149, 149, 149);
+  --color-font-third:rgb(25, 25, 25);
+}
+
+body {
+  background-color: var(--color-main);
+}/*# sourceMappingURL=styles.css.map */
